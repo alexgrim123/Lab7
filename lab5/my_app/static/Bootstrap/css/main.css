@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Kurale|Yanone+Kaffeesatz|Play');
+
+body {
+    background-color: white;
+    font-family: Lato, Play;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+#body1 {
+    background-color: white;
+    text-align: center;
+    padding-top: 55px;
+    background-size: cover;
+}
+
+h1, h2, h3, h4, h5 ,h6 {
+    font-family: Lato, Play;
+    color: black;
+    font-weight: 800;
+    font-size: 35px;
+}
+
+h5{
+    padding-left: 10%;
+
+}
+
+p {
+    color: #999999;
+    text-align: left;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+a {
+    color: black;
+}
+
+a:hover, a:focus {
+    color: white;
+    text-decoration: none;
+}
+
+tr {
+    padding-left: 50%;
+}
+
+li {
+    font-family: Lato, Play;
+    text-align: left;
+}
+
+a:hover, a:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#header1 {
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 15px;
+    min-height: 1080px;
+    background-size: 100%;
+}
+
+/*.container {*/
+    /*width: 90%;*/
+    /*color: black;*/
+/*}*/
+
+.pricingTable{
+ padding: 20px 0;
+ margin: 50px 0;
+ background: black;
+ text-align: center;
+ position: relative;
+ transition: all 0.3s ease-out 0s;
+}
+.pricingTable:before,
+.pricingTable:after{
+ content: "";
+ width: 72%;
+ height: 52px;
+ background: black;
+ margin: 0 auto;
+ position: absolute;
+ top: -32px;
+ left: 0;
+ right: 0;
+ transform: rotate(-3deg) skew(-3deg);
+ transition: all 0.3s ease-out 0s;
+}
+.pricingTable:after{
+ top: auto;
+ bottom: -32px
+}
+.pricingTable:hover,
+.pricingTable:hover:before,
+.pricingTable:hover:after{
+ background: #e93242;
+}
+.pricingTable .pricingTable-header{
+ border-bottom: 1px solid #e6e5e5;
+}
+.pricingTable .price-value{
+ padding: 8px 0;
+ font-size: 45px;
+ font-weight: bold;
+ line-height: 45px;
+ color: white;
+}
+.pricingTable:hover .price-value{
+ color: white;
+}
+.pricingTable .title{
+ font-size: 24px;
+ color: white;
+}
+.pricingTable:hover .title{
+ color: white;
+}
+.pricingTable .pricing-content{
+ padding: 0 15%;
+ margin: 0 0 30px 0;
+ list-style: none;
+}
+.pricingTable .pricing-content li{
+ display: block;
+ padding: 20px 0;
+ border-bottom: 1px solid #e6e5e5;
+ font-size: 15px;
+ color: #272727;
+}
+.pricingTable:hover .pricing-content li{
+ color: white;
+}
+.pricingTable .pricingTable-signup{
+ display: inline-block;
+ padding: 2px 20px;
+ background: #272727;
+ font-size: 14px;
+ color: white;
+ line-height: 30px;
+ text-transform: uppercase;
+ border-radius: 3px;
+ overflow: hidden;
+ position: relative;
+ z-index: 1;
+ transition: all 0.3s ease-out 0s;
+}
+.pricingTable .pricingTable-signup:hover{
+ color: #272727;
+}
+.pricingTable .pricingTable-signup:before{
+ content: "";
+ background: #e93242;
+ border-radius: 50%;
+ padding: 18%;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ z-index: -1;
+ transform: translate3d(-50%, -50%, 0) scale(0);
+ transition: transform .3s cubic-bezier(1, 0.15, 0.34, 1.03);
+}
+.pricingTable-signup:hover:before{
+ transform: translate3d(-50%, -50%, 0) scale(2.5);
+}
+@media only screen and (max-width: 990px){
+ .pricingTable{ margin-bottom: 50px; }
+}
+@media only screen and (max-width: 767px){
+ .pricingTable{ margin-bottom: 80px; }
+}
+
+.dropdown-toggle {
+    margin: 7px;
+    background-color: inherit;
+    border: none;
+}
+
+.dropdown-content {
+    width: 150px;
+    background-color: #444444;
+    border: none;
+    border-radius: 10px;
+    top: 100%;
+    display: none;
+    position: absolute;
+    margin-left: -90px;
+    font-size: 15px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+.dropdown-content a {
+    color: grey;
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: inherit;
+    color: white;
+    font-size: 17px;
+    padding: 3px;
+    padding-bottom: 4px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: inline-block;
+    border-color: #999999;
+    background-color: black;
+}
+
+.dropdown-content p {
+    margin-left: 25px;
+    margin-right: 25px;
+    display: inline-block;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.dropdown-content span {
+    padding: 2px;
+    margin-left: 15px;
+    margin-right: 25px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+}
+
+label {
+    letter-spacing: -0.5px;
+    vertical-align: top;
+    text-align: left;
+    color: black;
+    max-width: 220px;
+    width: 100%;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+input {
+    height: 35px;
+    max-width: 300px;
+    width: 100%;
+    font-size: 17px;
+    color: black;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: transparent;
+}
+
+.auth_blank {
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+}
+
+button {
+    color: white;
+    border-color: transparent;
+    border-width: 1px;
+    border-radius: 7px;
+    background-color: black;
+}
+
+button:hover {
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+}
+
+.auth_block {
+    padding-left: 100px;
+    width: 352px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 2px;
+    background-color: whitesmoke;
+
+}
+
+.auth_block p {
+    padding: 1px;
+    text-align: center;
+}
+
+.form-block {
+    display: inline-block;
+    max-width: 300px;
+    width: 100%;
+}
+
+.login {
+    vertical-align: middle;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: black;
+    max-width: 100px;
+    width: 100%;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.form-error {
+    text-align: left;
+    height: 25px;
+    font-size: 14px;
+    margin-bottom: 0px;
+    color: orangered;
+}
+

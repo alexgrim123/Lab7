@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AppleStore</title>
+    {% load static %}
+    <link rel="shortcut icon" href="{% static "images/76732.png" %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'Bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'Bootstrap/css/font-awesome.min.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'Bootstrap/css/main.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'Bootstrap/js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p1><img src="{% static "images/logo_apple.png" %}" width="23" height="25"/></p1>
+                <a class="navbar-brand" href="#">AppleStore</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{% url 'main_url' %}">На главную </a></li>
+                    <li><a href="{% url 'orders_url' %}">Заказы</a></li>
+                    <li><a href="{% url 'db_url' %}">Работа с БД</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="{% static "images/login.png" %}" width="30" height="30" alt=""/>
+{#                                <span class="caret"></span>#}
+                            </button>
+                            <div class="dropdown-content">
+                                {% if request.user.is_authenticated %}
+                                    <span>Здравствуйте, {{ request.user.username }}</span>
+                                    <a href="{% url 'logout_url' %}">Выйти</a>
+                                {% else %}
+                                    <a href="{% url 'login_url' %}">Вход</a>
+                                    <a href="{% url 'registration_url' %}">Регистрация</a>
+                                    <a href="{% url 'registration2_url' %}">Регистрация2</a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% block body1 %}{% endblock %}
+</body>
+</html>

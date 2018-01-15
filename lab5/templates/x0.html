@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+{% block body1 %}
+<link rel="stylesheet" href="http://bootstraptema.ru/_sf/2/279_tic-tac-toe.css" />
+<br><br><br>
+<div class="row centered">
+<div class="container" style="width: 500px">
+<h1>Пора заняться делом</h1>
+<div class="col-xs-12">
+
+
+<div class="col-md-6">
+<div class="clearfix"></div>
+ <article class="parent">
+ <form>
+ <div id="gr">
+ <input type="checkbox" id="a1">
+ <input type="checkbox" id="a2">
+ <input type="checkbox" id="a3">
+ <input type="checkbox" id="a4">
+ <input type="checkbox" id="a5">
+ <input type="checkbox" id="a6">
+ <input type="checkbox" id="a7">
+ <input type="checkbox" id="a8">
+ <input type="checkbox" id="a9">
+
+ <input type="checkbox" id="b1">
+ <input type="checkbox" id="b2">
+ <input type="checkbox" id="b3">
+ <input type="checkbox" id="b4">
+ <input type="checkbox" id="b5">
+ <input type="checkbox" id="b6">
+ <input type="checkbox" id="b7">
+ <input type="checkbox" id="b8">
+ <input type="checkbox" id="b9">
+
+ <input type="checkbox" id="c1">
+ <input type="checkbox" id="c2">
+ <input type="checkbox" id="c3">
+ <input type="checkbox" id="c4">
+ <input type="checkbox" id="c5">
+ <input type="checkbox" id="c6">
+ <input type="checkbox" id="c7">
+ <input type="checkbox" id="c8">
+ <input type="checkbox" id="c9">
+
+ <input type="checkbox" id="d1">
+ <input type="checkbox" id="d2">
+ <input type="checkbox" id="d3">
+ <input type="checkbox" id="d4">
+ <input type="checkbox" id="d5">
+ <input type="checkbox" id="d6">
+ <input type="checkbox" id="d7">
+ <input type="checkbox" id="d8">
+ <input type="checkbox" id="d9">
+
+ <input type="checkbox" id="e1">
+ <input type="checkbox" id="e2">
+ <input type="checkbox" id="e3">
+ <input type="checkbox" id="e4">
+ <input type="checkbox" id="e5">
+ <input type="checkbox" id="e6">
+ <input type="checkbox" id="e7">
+ <input type="checkbox" id="e8">
+ <input type="checkbox" id="e9">
+
+
+ <div id="pa">
+ <label for="a1" id="aa1">O</label>
+ <label for="a2" id="aa2">O</label>
+ <label for="a3" id="aa3">O</label>
+ <label for="a4" id="aa4">O</label>
+ <label for="a5" id="aa5">O</label>
+ <label for="a6" id="aa6">O</label>
+ <label for="a7" id="aa7">O</label>
+ <label for="a8" id="aa8">O</label>
+ <label for="a9" id="aa9">O</label>
+ </div>
+
+ <div id="pb">
+ <label for="b1" id="bb1">O</label>
+ <label for="b2" id="bb2">O</label>
+ <label for="b3" id="bb3">O</label>
+ <label for="b4" id="bb4">O</label>
+ <label for="b5" id="bb5">O</label>
+ <label for="b6" id="bb6">O</label>
+ <label for="b7" id="bb7">O</label>
+ <label for="b8" id="bb8">O</label>
+ <label for="b9" id="bb9">O</label>
+ </div>
+
+ <div id="pc">
+ <label for="c1" id="cc1">O</label>
+ <label for="c2" id="cc2">O</label>
+ <label for="c3" id="cc3">O</label>
+ <label for="c4" id="cc4">O</label>
+ <label for="c5" id="cc5">O</label>
+ <label for="c6" id="cc6">O</label>
+ <label for="c7" id="cc7">O</label>
+ <label for="c8" id="cc8">O</label>
+ <label for="c9" id="cc9">O</label>
+ </div>
+
+ <div id="pd">
+ <label for="d1" id="dd1">O</label>
+ <label for="d2" id="dd2">O</label>
+ <label for="d3" id="dd3">O</label>
+ <label for="d4" id="dd4">O</label>
+ <label for="d5" id="dd5">O</label>
+ <label for="d6" id="dd6">O</label>
+ <label for="d7" id="dd7">O</label>
+ <label for="d8" id="dd8">O</label>
+ <label for="d9" id="dd9">O</label>
+ </div>
+
+ <div id="pe">
+ <label for="e1" id="ee1">O</label>
+ <label for="e2" id="ee2">O</label>
+ <label for="e3" id="ee3">O</label>
+ <label for="e4" id="ee4">O</label>
+ <label for="e5" id="ee5">O</label>
+ <label for="e6" id="ee6">O</label>
+ <label for="e7" id="ee7">O</label>
+ <label for="e8" id="ee8">O</label>
+ <label for="e9" id="ee9">O</label>
+ </div>
+
+ <span id="o1">O</span>
+ <span id="o2">O</span>
+ <span id="o3">O</span>
+ <span id="o4">O</span>
+ <span id="o5">O</span>
+ <span id="o6">O</span>
+ <span id="o7">O</span>
+ <span id="o8">O</span>
+ <span id="o9">O</span>
+
+ <span id="x1">X</span>
+ <span id="x2">X</span>
+ <span id="x3">X</span>
+ <span id="x4">X</span>
+ <span id="x5">X</span>
+ <span id="x6">X</span>
+ <span id="x7">X</span>
+ <span id="x8">X</span>
+ <span id="x9">X</span>
+
+ <span id="d1">X</span>
+ <span id="d2">X</span>
+ <span id="d3">X</span>
+ <span id="d4">X</span>
+ <span id="d5">X</span>
+ <span id="d6">X</span>
+ <span id="d7">X</span>
+ <span id="d8">X</span>
+ <span id="d9">X</span>
+
+
+ <p id="wx1">I win</p>
+ <p id="wx2">I win</p>
+ <p id="wx3">I win</p>
+ <p id="wx4">I win</p>
+ <p id="wx5">I win</p>
+ <p id="wx6">I win</p>
+ <p id="wx7">I win</p>
+ <p id="wx8">I win</p>
+ <p id="wx9">I win</p>
+
+ <p id="wd1">draw</p>
+ <p id="wd2">draw</p>
+ <p id="wd3">draw</p>
+ <p id="wd4">draw</p>
+ <p id="wd5">draw</p>
+ <p id="wd6">draw</p>
+ <p id="wd7">draw</p>
+ <p id="wd8">draw</p>
+ <p id="wd9">draw</p>
+
+ <p id="wo1">You win</p>
+ <p id="wo2">You win</p>
+ <p id="wo3">You win</p>
+ <p id="wo4">You win</p>
+ <p id="wo5">You win</p>
+ <p id="wo6">You win</p>
+ <p id="wo7">You win</p>
+ <p id="wo8">You win</p>
+ <p id="wo9">You win</p>
+
+ </div>
+ <input id="button1" type="reset" value="Новая игра" style="width: 300px">
+ </form>
+ </article>
+<div class="clearfix"></div>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+{% endblock %}

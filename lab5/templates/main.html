@@ -1,0 +1,89 @@
+
+{% extends 'base.html' %}
+
+{% block body1 %}
+    <div id="header1">
+        <div class="container">
+            <div class="row centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h1>Выберите свой будущий iPhone</h1>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container">
+            <div class="row centered">
+                {% load static %}
+                <div class="col-lg-4">
+                    <a href="{% url 'phone_info_url' 1 %}"><img src="{% static "images/iPhone7.png" %}" width="400" height="400" alt="iPhone7 image"/></a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="{% url 'phone_info_url' 2 %}"><img src="{% static "images/iPhone8.jpg" %}" width="400" height="400" alt="iPhone8 image"/></a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="{% url 'phone_info_url' 3 %}"><img src="{% static "images/iPhoneX.png" %}" width="400" height="400" alt="iPhoneX image"/></a>
+                </div>
+            </div>
+            <div class="row ">
+    <div class="col-md-4 col-sm-6">
+        <div class="pricingTable">
+            <div class="pricingTable-header">
+                <span class="price-value">35990 ₽</span>
+                <h3 class="title">iPhone 7</h3>
+            </div>
+                <ul class="pricing-content">
+                    <li>64GB памяти</li>
+                    <li>Диагональ 4.7 дюйма</li>
+                    <li>Камера 12 млн пикс.</li>
+                    <li>4 ядра</li>
+                    <li>iOS 10</li>
+                </ul>
+                    <a href="{% url 'orders_url' %}" class="pricingTable-signup">Заказать</a>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+        <div class="pricingTable">
+            <div class="pricingTable-header">
+                <span class="price-value">45990 ₽</span>
+                <h3 class="title">iPhone 8</h3>
+            </div>
+                <ul class="pricing-content">
+                    <li>64GB памяти</li>
+                    <li>Диагональ 4.7 дюйма</li>
+                    <li>Камера 12 млн пикс.</li>
+                    <li>6 ядер</li>
+                    <li>iOS 11</li>
+                </ul>
+                    <a href="{% url 'orders_url' %}" class="pricingTable-signup">Заказать</a>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+        <div class="pricingTable">
+            <div class="pricingTable-header">
+                <span class="price-value">70000 ₽</span>
+                 <h3 class="title"> iPhone X</h3>
+            </div>
+                <ul class="pricing-content">
+                    <li>128GB памяти</li>
+                    <li>Диагональ 5.8 дюйма</li>
+                    <li>Двойная камера 12МП</li>
+                    <li>6 ядер</li>
+                    <li>iOS 11</li>
+                </ul>
+            <a href="{% url 'orders_url' %}" class="pricingTable-signup">Заказать</a>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,105 @@
+.breadcrumbs {
+    color: darkgray;
+}
+
+#branding h1, #branding h1 a:link, #branding h1 a:visited {
+    color: white;
+}
+
+#header {
+    background: grey;
+    color: orangered;
+}
+
+div.breadcrumbs {
+    background: black;
+}
+
+.module h2, .module caption, .inline-group h2 {
+    background: gray;
+}
+
+
+a:link, a:visited {
+    color: black;
+}
+
+body {
+    background: darkgray;
+}
+
+h1 {
+    color: black;
+}
+
+.module {
+    background: lightgray;
+}
+
+#content-related {
+    background: lightgray;
+}
+
+#changelist .paginator {
+    background: lightgrey !important;
+    color: #666 !important;
+    border-bottom: 1px solid #eee !important;
+    overflow: hidden !important;
+}
+
+#changelist .actions select {
+    border: solid !important;
+    border-width: 1px !important;
+}
+
+#changelist .actions {
+    background: lightgrey !important;
+    color: black !important;
+}
+
+.row1 {
+    background: lightgrey;
+}
+
+.row2 {
+    background: rgb(186,190,189);
+}
+
+thead th{
+    background: orangered;
+    color: white;
+}
+
+#changelist #toolbar {
+    background: orangered !important;
+}
+
+#changelist #toolbar form input[type="submit"] {
+    border-radius: 3px !important;
+    box-shadow: none !important;
+}
+
+#changelist .actions .button {
+    border-radius: 3px !important;
+    box-shadow: none !important;
+}
+
+.paginator a:link, .paginator a:visited {
+    background-color: orangered !important;
+}
+
+.paginator a.showall {
+    color: black !important;
+}
+
+thead th a:link, thead th a:visited {
+    color: black;
+}
+
+.paginator a.showall {
+    background: none !important;
+}
+
+.paginator a:hover {
+    background-color: black !important;
+}
